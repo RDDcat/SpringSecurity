@@ -18,4 +18,8 @@ public class Account {
     private String username;
     private String password;
     private String role;
+
+    public void encodePassword() {
+        this.password = "{noop}" + this.password;
+    }
 }
